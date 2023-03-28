@@ -1,0 +1,132 @@
+.counter {
+    background: var(--primary-color);
+    border-radius: 2rem;
+    padding: 8.5rem 14rem;
+    margin-bottom: 15rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.circle__topleft {
+    position: absolute;
+    width: 28.6rem;
+    height: 28.6rem;
+    background: rgba(82, 65, 187, 0.33);
+    border-radius: 50%;
+    bottom: 20.7rem;
+    right: 151.7rem;
+}
+
+.circle__topright {
+    position: absolute;
+    width: 27.1rem;
+    height: 27.1rem;
+    background: #6B58E0;
+    border-radius: 50%;
+    left: 134rem;
+    bottom: 18.7rem;
+}
+
+.circle__bottom {
+    position: absolute;
+    width: 32.9rem;
+    height: 32.9rem;
+    border-radius: 50%;
+    background: #5241BB;
+    top: 24.5rem;
+    left: 23.1rem;
+}
+
+.circle__small {
+    position: absolute;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    background: #6B58E0;
+    top: 7.8rem;
+    left: 5.9rem;
+}
+
+.counters {
+    display: grid;
+    grid-template-columns: repeat(4, 23.9rem);
+    gap: 15rem;
+    justify-content: space-around;
+    position: inherit;
+    /* overflow: hidden;
+    height: 13.4rem; */
+}
+
+
+.counter__item {
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 9rem;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.counter__item span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-top: 1.9rem;
+}
+
+.counter .white {
+    position: absolute;
+    color: white;
+    left: 50.2rem;
+    bottom: 3.5rem;
+    width: 2.2rem;
+    height: 4.1rem;
+    z-index: 2;
+}
+
+.counter .gray-light {
+    position: absolute;
+    right: 3.6rem;
+    bottom: 4.3rem;
+    width: 4.2rem;
+    height: 7.7rem;
+    grid-template-columns: repeat(3, .7rem);
+}
+
+/* RESPONSIVE */
+/* @media (max-width:1660px) {
+    .counters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:1275px) {
+    .counters {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+}
+
+@media (max-width:928px) {
+    .counters {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6rem;
+    }
+    .white {
+        display: none;
+    }
+} */
+
+@media (max-width:1640px) {
+    .counters{
+        grid-template-columns: repeat(2, 23.9rem);
+    }
+    .white{
+        display: none;
+    }
+}

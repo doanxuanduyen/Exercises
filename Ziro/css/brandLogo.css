@@ -1,0 +1,25 @@
+.brandLogo {
+    display: grid;
+    gap: 11.2rem;
+    grid-template-columns: repeat(5, 17.2rem);
+    align-content: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 262px;
+}
+
+/* RESPONSIVE */
+@media (max-width:1388px) {
+    .brandLogo{
+        grid-template-columns: repeat(3, 17.2rem);
+       
+    }
+}
+@media (max-width:782px) {
+    .brandLogo{
+        grid-template-columns: repeat(2, 17.2rem);
+       
+    }
+}
+
