@@ -29,12 +29,14 @@
     --box-shadow-1:0px 19px 29px rgba(62, 53, 120, 0.14);
     --box-shadow-2:0px 7px 22px rgba(143, 134, 196, 0.07);
     --box-shadow-3:0px 19px 29px rgba(62, 53, 120, 0.14);
+    --box-shadow-4:0px 19px 37px rgba(62, 53, 120, 0.03);
 }
 
 html{
     font-size: 10px;
     color: #363848;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @media (max-width:907px) {
@@ -87,6 +89,7 @@ input, button{
 
 button{
     cursor: pointer;
+    background: none;
 }
 
 .circle__dots {

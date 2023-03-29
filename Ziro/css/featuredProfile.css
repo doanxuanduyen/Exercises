@@ -23,6 +23,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     color: var(--primary-color);
+    background: none;
 }
 
 .profile__card__slider{
@@ -37,13 +38,17 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .profile__card {
     padding: 3rem;
     box-shadow: 0px 2px 28px rgba(62, 53, 120, 0.04);
     border-radius: 1.8rem;
+}
+
+.slick-list{
+    width: 161.9rem;
 }
 
 .status {
@@ -137,10 +142,6 @@
     background: var(--amber);
 }
 
-.profile__card .left {
-    position: absolute;
-
-}
 
 .profile__card__slider {
     position: relative;
@@ -148,7 +149,16 @@
     height: 23.8rem;
 }
 
-.icon__slider--left{
+.profile__cards{
+    position: absolute;
+    z-index: 0;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+/* .icon__slider--left{
     position: absolute;
     top: 45%;
     left: -2rem;
@@ -168,6 +178,43 @@
     background: var(--primary-color);
     box-shadow: var(--box-shadow--heavy);
     cursor: pointer;
+} */
+
+.slick-slide{
+    margin-right: 2rem;
+}
+
+.slick-prev{
+    position: absolute;
+    top: 50%;
+    left: -2rem;
+}
+
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+}
+
+.icon__slider{
+    background: var(--white);
+    position: absolute;
+    top: 50%;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.icon__slider i {
+    color: var(--white);
+    font-size: 2.2rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow--heavy);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-3);
 }
 
 /* RESPONSIVE */
@@ -178,16 +225,43 @@
     .profile__cards{
         grid-template-columns: repeat(3, .5fr);
     }
+    .slick-list{
+        width: calc(47.4rem*3);
+    }
 }
 
-@media (max-width:1330px) {
+@media (max-width:1527px) {
+    .profile__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .slick-list{
+        width: calc(47rem*2.5);
+    }
+}
+
+@media (max-width:1259px) {
     .profile__cards{
         grid-template-columns: repeat(2, .5fr);
     }
+    .slick-list{
+        width: calc(47rem*2);
+    }
 }
 
-@media (max-width:932px) {
+@media (max-width:1063px) {
     .profile__cards{
         grid-template-columns: repeat(1, 1fr);
     }
+    .slick-list{
+        width: calc(46rem*1.5);
+    }
 }
+
+/* @media (max-width:932px) {
+    .profile__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .slick-list{
+        width: 46rem;
+    }
+} */

@@ -41,7 +41,7 @@
     margin-bottom: 3.4rem;
 }
 
-.card .choose {
+.card.choose {
     box-shadow: var(--box-shadow-3);
 }
 

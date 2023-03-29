@@ -131,6 +131,7 @@
 .icon__nav .icon__right i {
     color: var(--white);
     background: var(--primary-color);
+    box-shadow: var(--box-shadow-3);
 }
 
 .sub__infor {

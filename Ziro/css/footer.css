@@ -133,37 +133,44 @@ td {
     flex-wrap: wrap;
 }
 
-.footer__link{
+.footer__link {
     grid-area: link;
 }
 
-.footer__contact{
+.footer__contact {
     grid-area: contact;
 }
-/* RESPONSIVE */
 
-.contact__infor .logo{
-    display: block;
+.logo--white {
+    width: 14.4rem;
+    height: 5.663rem;
+    margin-bottom: 5.237rem;
 }
 
+/* RESPONSIVE */
+
+/* .contact__infor .logo{
+    display: block;
+} */
+
 @media (max-width:1545px) {
-    .footer__top{
+    .footer__top {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 'infor infor''link contact';
+        grid-template-areas: 'infor infor' 'link contact';
     }
-    .company__infor .about{
+
+    .company__infor .about {
         width: 100%;
     }
 }
 
 @media (max-width:980px) {
-    .footer__top{
+    .footer__top {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'infor''link' 'contact';
+        grid-template-areas: 'infor' 'link' 'contact';
     }
-    .company__infor .about{
+
+    .company__infor .about {
         width: 100%;
     }
 }
-
-

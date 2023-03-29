@@ -29,6 +29,12 @@
     display: none;
 }
 
+.menu--res .menu__item:hover{
+    width: 90%;
+    background: var(--primary-color);
+    color: var(--white);
+}
+
 .logo {
     width: 14.4rem;
     height: 5.663rem;
@@ -61,6 +67,12 @@
     line-height: 2.7rem;
 }
 
+.menu__item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
 .header__right {
     display: flex;
     width: 73.4rem;
@@ -92,16 +104,29 @@
     font-size: 1.8rem;
     line-height: 2.7rem;
     border-radius: 3.7rem;
+    /* background: var(--violet-100); */
+    border: .2rem solid var(--violet-100);
+}
+
+.btn__join:hover{
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow-1);
+    color: var(--white);
 }
 
 .btn--login {
     padding: 1.6rem 3.9rem;
-    background: var(--violet-100);
 }
 
 .btn--signup {
     padding: 1.6rem 5.4rem;
-    background: var(--primary-color);
+}
+
+.btn-log-sign li:hover{
+    background: var(--violet-500);
+    color: var(--white);
+    border-radius: 1rem;
+    width: 100%;
 }
 
 #user {

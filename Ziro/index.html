@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ziro</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,6 +15,7 @@
 
 <body>
     <!-- HEADER -->
+    <a id="scrollUp" href="#"><i class="fa-solid fa-arrow-up"></i></a>
     <div id="header" class="cover sticky">
         <div class="container">
             <div class="header">
@@ -275,13 +275,45 @@
                 <div class="featuredProfile">
                     <div class="profile__tittle">
                         <h1 class="tittle__main">Featured profile this week</h1>
-                        <div class="tittle__sub">View more</div>
+                        <button class="tittle__sub">View more</button>
                     </div>
                     <div class="profile__card__slider">
-                        <div class="icon__slider icon__slider--left">
+                        <!-- <div class="icon__slider icon__slider--left">
                             <i class="fa-solid fa-arrow-left"></i>
-                        </div>
+                        </div> -->
                         <div class="profile__cards">
+                            <div class="profile__card">
+                                <div class="status">
+                                    <div class="ava"></div>
+                                    <div class="infor">
+                                        <div class="infor__name">David Hutapea</div>
+                                        <div class="infor__oc">UI/UX Designer</div>
+                                    </div>
+                                </div>
+                                <div class="profile__rate">
+                                    <div class="feedback">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="rate__rank">4.3</div>
+                                    </div>
+                                    <button class="salary">$84/hr</button>
+                                </div>
+                            </div>
                             <div class="profile__card">
                                 <div class="status">
                                     <div class="ava"></div>
@@ -411,9 +443,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="icon__slider icon__slider--right">
+                        <!-- <div class="icon__slider icon__slider--right">
                             <i class="fa-solid fa-arrow-right"></i>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -683,7 +715,7 @@
                 <div class="footer">
                     <div class="footer__top">
                         <div class="company__infor">
-                            <div class="logo">
+                            <div class="logo--white">
                                 <img src="./img/logo-white.png" alt="" srcset="">
                             </div>
                             <div class="about">Ziro is a Freelance Landing Website lorem ipsum dolor sit amet,
@@ -695,7 +727,7 @@
                                     <li class="contact__item"><i class="fa-brands fa-twitter"></i></li>
                                     <li class="contact__item"><i class="fa-brands fa-youtube"></i></li>
                                     <li class="contact__item"><i class="fa-brands fa-instagram"></i></li>
-                                    <li class="contact__item"></li>
+                                    <li class="contact__item"><i class="fa-brands fa-linkedin"></i></li>
                                 </ul>
                             </div>
                         </div>
@@ -767,7 +799,7 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./Js/script.js"></script>
 </body>
 
