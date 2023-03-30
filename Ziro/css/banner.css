@@ -1,0 +1,266 @@
+#banner {
+    background: var(--indigo-100);
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'content img';
+    padding: 15.6rem 0 12.5rem;
+}
+
+.banner__content {
+    grid-area: content;
+}
+
+.content__header {
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 8rem;
+    margin-bottom: 2.4rem;
+}
+
+.content__header span {
+    color: var(--primary-color);
+}
+
+.content {
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 6rem;
+    width: 53rem;
+
+}
+
+.btn__nav {
+    margin-bottom: 6rem;
+}
+
+.btn__nav button {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    border-radius: 3.7rem;
+    font-weight: 500;
+}
+
+.btn__nav .discover {
+    padding: 1.6rem 3.1rem;
+    box-shadow: var(--box-shadow--heavy);
+    background: var(--primary-color);
+    color: var(--white);
+    margin-right: 2.2rem;
+    box-shadow: var(--box-shadow-3);
+}
+
+.btn__nav .watch {
+    background: none;
+}
+
+.btn__nav .watch i {
+    font-size: 2.4rem;
+    padding: 1.3rem;
+    border-radius: 50%;
+    border: 1px solid #F2F2F2;
+    margin-right: 1.4rem;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider__dot {
+    width: 2.1rem;
+    height: .6rem;
+    background: var(--violet-300);
+    border-radius: 1rem;
+    margin-right: .6rem;
+}
+
+.active {
+    background: var(--primary-color);
+    width: 3rem;
+}
+
+.banner__img {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.circle__big {
+    width: 57.5rem;
+    height: 57.5rem;
+    border-radius: 50%;
+    background: var(--violet-400);
+    position: relative;
+}
+
+.circle__big::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 3.4rem;
+    border-radius: 50%;
+    height: 3.4rem;
+    background: var(--violet-400);
+    top: -1rem;
+    right: 2rem;
+}
+
+.circle__big::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5.4rem;
+    border-radius: 50%;
+    height: 5.4rem;
+    background: var(--primary-color);
+    top: 43rem;
+    right: 4rem;
+}
+
+.icon {
+    position: absolute;
+    top: -10.5rem;
+    left: 33rem;
+    width: 8.2rem;
+    height: 9.2rem;
+    box-shadow: var(--box-shadow-4);
+}
+
+.chart {
+    position: absolute;
+    top: 10rem;
+    left: 45rem;
+    width: 20.4rem;
+    height: 20.1rem;
+    box-shadow: var(--box-shadow-0);
+}
+
+.circle__dots--violet {
+    width: 3.611rem;
+    height: 6.6rem;
+    grid-template-columns: repeat(3, .7rem);
+    gap: .875rem;
+    left: -4.5rem;
+}
+
+.circle__dots--violet .dot {
+    width: .623rem;
+    height: .623rem;
+    background: var(--primary-color);
+}
+
+.circle__dots--gray {
+    width: 4.652rem;
+    height: 4.652rem;
+    grid-template-columns: repeat(5, .4rem);
+    gap: .7rem;
+    bottom: 2rem;
+    right: -1.7rem;
+}
+
+.circle__dots--gray .dot {
+    width: .436rem;
+    height: .436rem;
+    background: var(--gray-300);
+}
+
+.cardProfile {
+    position: absolute;
+    padding: 2.6rem;
+    border-radius: 1.7rem;
+    display: flex;
+    background: rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(5.5px);
+    bottom: 5.6rem;
+    right: 42.7rem;
+    box-shadow: var(--box-shadow-0);
+}
+
+.cardProfile .ava {
+    width: 10.2rem;
+    height: 10.2rem;
+    background: var(--gray-300);
+    border-radius: 2rem;
+    margin-right: 1.6rem;
+}
+
+.infor {
+    margin-right: .4rem;
+}
+
+.cardProfile .profile_infor .name {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+}
+
+.profile_infor .oc {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.favorite_item {
+    margin-top: 1.552rem;
+}
+
+.favorite_item i {
+    font-size: 2.4rem;
+    margin-right: .9rem;
+}
+
+.btn {
+    display: flex;
+}
+
+.btn i {
+    font-size: 2.9rem;
+}
+
+.btn__check i {
+    color: var(--green);
+    margin-right: 2.1rem;
+}
+
+.btn__close i {
+    color: var(--rose-600);
+}
+
+
+/* REPONSIVE */
+@media (max-width:1667px) {
+    .banner {
+        grid-template-columns: 90%;
+        grid-template-areas: 'content' 'img';
+        justify-content: center;
+        gap: 11rem;
+    }
+
+    .cardProfile {
+        right: 26.7rem;
+    }
+}
+
+@media (max-width:786px) {
+    .banner{
+        padding: 0;
+    }
+    .cardProfile {
+        right: 18.7rem;
+    }
+
+    .chart {
+        top: 3rem;
+        left: 42rem;
+
+    }
+}

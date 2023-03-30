@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: .3rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+#scrollUp{
+    height: 45px;
+    width: 40px;
+    right: 2%;
+    bottom: 3%;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 500;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#scrollUp i{
+    font-size: 2rem;
+    color: var(--white);
+}

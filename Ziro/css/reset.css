@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary-color:#5F4BDB;
+    --secondary-color:#363848;
+    --indigo-100:#F8F9FD;
+    --violet-100: #F0EEFF;
+    --violet-200:#F7F5FF;
+    --violet-300:#D7D0FB;
+    --violet-400:#B2C3FF;
+    --violet-500:#6B58E0;
+    --violet-600:rgba(82, 65, 187, 0.33);
+    --orange-500:#FF8412;
+    --gray-300:#C9C9C9;
+    --gray-900:#1F2131;
+    --purple:#8E22E2;
+    --purple-light:#F6EBFF;
+    --blue:#2B3DC7;
+    --blue-500:#3CB5DB;
+    --blue-light:#E7E9FF;
+    --green:#3DCD65;
+    --green-light:#E9FFEF;
+    --amber:#FF8412;
+    --white: white;
+    --rose-600:#FF5353;
+
+
+    --box-shadow-0:0px 11px 39px rgba(0, 0, 0, 0.07);
+    --box-shadow-1:0px 19px 29px rgba(62, 53, 120, 0.14);
+    --box-shadow-2:0px 7px 22px rgba(143, 134, 196, 0.07);
+    --box-shadow-3:0px 19px 29px rgba(62, 53, 120, 0.14);
+    --box-shadow-4:0px 19px 37px rgba(62, 53, 120, 0.03);
+}
+
+html{
+    font-size: 10px;
+    color: #363848;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@media (max-width:907px) {
+    html{
+        font-size: 7px;
+    }
+}
+
+@media (max-width:548px) {
+    html{
+        font-size: 5px;
+    }
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 162rem;
+}
+
+
+.cover{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+input, button{
+    border: none;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    background: none;
+}
+
+.circle__dots {
+    display: grid;
+    position: absolute;
+}
+
+.circle__dots .dot {
+    border-radius: 50%;
+}
+
+.favorite {
+    display: flex;
+}
+
+.favorite_item i {
+    color: var(--gray-300);
+}
+
+.rate i {
+    color: #FF8412;
+}

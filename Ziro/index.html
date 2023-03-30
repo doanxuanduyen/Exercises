@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ziro</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <a id="scrollUp" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    <div id="header" class="cover sticky">
+        <div class="container">
+            <div class="header">
+                <div class="header__left">
+                    <div id="bar" class="hidden1">
+                        <i class="fa-solid fa-bars"></i>
+                        <div class="menu--res">
+                            <ul class="menu__items">
+                                <li class="menu__item">Home</li>
+                                <li class="menu__item">Pricing</li>
+                                <li class="menu__item">Blog</li>
+                                <li class="menu__item">Become a member</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/origami (1) 1.png" alt="ziro logo" />
+                        <img src="./img/Ziro.png" alt="">
+                    </div>
+                    <div class="menu">
+                        <ul class="menu__items">
+                            <li class="menu__item">Home</li>
+                            <li class="menu__item">Pricing</li>
+                            <li class="menu__item">Blog</li>
+                            <li class="menu__item">Become a member</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="search">
+                        <input type="search" name="search" id="search" placeholder="Search here..." />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <button class="btn__join btn--login">Log in</button>
+                    <button class="btn__join btn--signup">Sign up</button>
+                    <div id="user" class="hidden2">
+                        <i class="fa-solid fa-user"></i>
+                        <ul class="btn-log-sign">
+                            <li class="btn__log">Log in</li>
+                            <li class="btn__sign">Sign up</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <main id="main" class="canvas__open">
+        <!-- BANNER -->
+        <div id="banner" class="cover">
+            <div class="container">
+                <div class="banner">
+                    <div class="banner__content">
+                        <h1 class="content__header">
+                            Find out <span>talented freelancer</span> with better review
+                            faster
+                        </h1>
+                        <p class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <div class="btn__nav">
+                            <button class="discover">Discover now</button>
+                            <button class="watch">
+                                <i class="fa-sharp fa-regular fa-circle-play"></i>Watch Demo
+                            </button>
+                        </div>
+                        <div class="slider">
+                            <div class="slider__dot"></div>
+                            <div class="slider__dot active"></div>
+                            <div class="slider__dot"></div>
+                            <div class="slider__dot"></div>
+                        </div>
+                    </div>
+                    <div class="banner__img">
+                        <div class="circle__big">
+                            <div class="circle__dots circle__dots--violet">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/emoji.png" alt="" srcset="" />
+                            </div>
+                            <div class="chart">
+                                <img src="./img/bars.png" alt="" srcset="" />
+                            </div>
+                            <div class="cardProfile">
+                                <div class="ava"></div>
+                                <div class="infor">
+                                    <div class="profile_infor">
+                                        <div class="name">David</div>
+                                        <div class="oc">UI/UX designer</div>
+                                    </div>
+                                    <div class="favorites">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn">
+                                    <div class="btn__check">
+                                        <i class="fa-regular fa-circle-check"></i>
+                                    </div>
+                                    <div class="btn__close">
+                                        <i class="fa-regular fa-circle-xmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="circle__dots circle__dots--gray">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- STEPS -->
+        <div id="steps" class="cover">
+            <div class="container">
+                <div class="steps">
+                    <div class="steps__left">
+                        <h4 class="sub__tittle">How it works</h4>
+                        <h1 class="tittle">Start find a job you love with us easily</h1>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="left">
+                                    <p class="number number--purple">1</p>
+                                    <div class="card__content">
+                                        <div class="tittle__card">Complete Profile</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="card choose">
+                                <div class="left">
+                                    <p class="number number--blue">2</p>
+                                    <div class="card__content">
+                                        <div class="tittle__card">Search Vacancies</div>
+                                        <p class="tittle__card--sub">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="left">
+                                    <p class="number number--green">3</p>
+                                    <div class="card__content">
+                                        <div class="tittle__card">Apply Jobs</div>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__right">
+                        <div class="circle__dots circle__dots--grey">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="video">
+                            <i class="fa-solid fa-circle-play"></i>
+                        </div>
+                        <div class="chart_video">
+                            <img src="./img/chart.png" alt="" srcset="">
+                        </div>
+                        <div class="vectors">
+                            <img src="./img/lines.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURED-PROFILE -->
+        <div id="featuredProfile" class="cover">
+            <div class="container">
+                <div class="featuredProfile">
+                    <div class="profile__tittle">
+                        <h1 class="tittle__main">Featured profile this week</h1>
+                        <button class="tittle__sub">View more</button>
+                    </div>
+                    <div class="profile__card__slider">
+                        <!-- <div class="icon__slider icon__slider--left">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div> -->
+                        <div class="profile__cards">
+                            <div class="profile__card">
+                                <div class="status">
+                                    <div class="ava"></div>
+                                    <div class="infor">
+                                        <div class="infor__name">David Hutapea</div>
+                                        <div class="infor__oc">UI/UX Designer</div>
+                                    </div>
+                                </div>
+                                <div class="profile__rate">
+                                    <div class="feedback">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="rate__rank">4.3</div>
+                                    </div>
+                                    <button class="salary">$84/hr</button>
+                                </div>
+                            </div>
+                            <div class="profile__card">
+                                <div class="status">
+                                    <div class="ava"></div>
+                                    <div class="infor">
+                                        <div class="infor__name">David Hutapea</div>
+                                        <div class="infor__oc">UI/UX Designer</div>
+                                    </div>
+                                </div>
+                                <div class="profile__rate">
+                                    <div class="feedback">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="rate__rank">4.3</div>
+                                    </div>
+                                    <button class="salary">$84/hr</button>
+                                </div>
+                            </div>
+                            <div class="profile__card">
+                                <div class="status">
+                                    <div class="ava"></div>
+                                    <div class="infor">
+                                        <div class="infor__name">Henry Simatupang</div>
+                                        <div class="infor__oc">Photographer</div>
+                                    </div>
+                                </div>
+                                <div class="profile__rate">
+                                    <div class="feedback">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="rate__rank">8.4</div>
+                                    </div>
+                                    <button class="salary">$95/hr</button>
+                                </div>
+                            </div>
+                            <div class="profile__card">
+                                <div class="status">
+                                    <div class="ava off"></div>
+                                    <div class="infor">
+                                        <div class="infor__name">Jennie Smith</div>
+                                        <div class="infor__oc">Content Writer</div>
+                                    </div>
+                                </div>
+                                <div class="profile__rate">
+                                    <div class="feedback">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="rate__rank">4.6</div>
+                                    </div>
+                                    <button class="salary">$86/hr</button>
+                                </div>
+                            </div>
+                            <div class="profile__card">
+                                <div class="status">
+                                    <div class="ava"></div>
+                                    <div class="infor">
+                                        <div class="infor__name">Louis Anderson</div>
+                                        <div class="infor__oc">Customer Service</div>
+                                    </div>
+                                </div>
+                                <div class="profile__rate">
+                                    <div class="feedback">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="rate__rank">4.3</div>
+                                    </div>
+                                    <button class="salary">$84/hr</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="icon__slider icon__slider--right">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- BRANDLOGO -->
+        <div id="brandLogo" class="cover">
+            <div class="container">
+                <div class="brandLogo">
+                    <img src="./img/client1.png" alt="" class="brandLogo__img">
+                    <img src="./img/client2.png" alt="" class="brandLogo__img">
+                    <img src="./img/client3.png" alt="" class="brandLogo__img">
+                    <img src="./img/client4.png" alt="" class="brandLogo__img">
+                    <img src="./img/client5.png" alt="" class="brandLogo__img">
+                </div>
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+        <div id="testimonials" class="cover">
+            <div class="container">
+                <div class="testimonials">
+                    <div class="tittle">
+                        <h1 class="head__tittle">What our Customer Says</h1>
+                        <h3 class="sub__tittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</h3>
+                    </div>
+                    <div class="customer__fb">
+                        <div class="customer__img">
+                            <img src="./Img/“.png" alt="" srcset="" class="apostrophe">
+                            <img src="./Img/placeholder.png" alt="" srcset="" class="placeholder">
+                            <div class="circle__dots circle__dots--violet">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="customer__fb__content">
+                            <div class="infor__rate">
+                                <div class="customer__infor">
+                                    <div class="name">William Smith</div>
+                                    <div class="oc">CEO of True Love Studios</div>
+                                </div>
+                                <div class="customer__rate">
+                                    <div class="favorites">
+                                        <ul class="favorite">
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item rate">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                            <li class="favorite_item">
+                                                <i class="fa-solid fa-star"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <p class="point">4.8</p>
+                                </div>
+                            </div>
+                            <p class="fb">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                                quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+                                ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                                dolor sit amet, consectetur</p>
+                            <div class="sub__infor">
+                                <div class="icon__nav">
+                                    <div class="icon__left"><i class="fa-solid fa-arrow-left-long"></i></div>
+                                    <div class="icon__right"><i class="fa-solid fa-arrow-right"></i></div>
+                                </div>
+                                <div class="customer__other">
+                                    <div class="placehoder"></div>
+                                    <div class="placehoder"></div>
+                                    <div class="placehoder"></div>
+                                    <div class="placehoder"></div>
+                                    <div class="placehoder">21k+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COUNTER -->
+        <div id="counter" class="cover">
+            <div class="container">
+                <div class="counter">
+                    <div class="circle__topleft"></div>
+                    <div class="circle__topright"></div>
+                    <div class="circle__bottom"></div>
+                    <div class="circle__small"></div>
+                    <ul class="counters">
+                        <li class="counter__item">
+                            36,789+
+                            <span>Talented Freelancer</span>
+                        </li>
+                        <li class="counter__item">
+                            458,973
+                            <span>VIsitors</span>
+                        </li>
+                        <li class="counter__item">
+                            56,461
+                            <span>Contract Made</span>
+                        </li>
+                        <li class="counter__item">
+                            852k
+                            <span>Companies</span>
+                        </li>
+                    </ul>
+                    <div class="circle__dots circle__dots--gray white">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="circle__dots circle__dots--gray gray-light">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRICING PLAN -->
+        <div id="pricingPlan" class="cover">
+            <div class="container">
+                <div class="pricingPlan">
+                    <div class="tittle">
+                        <h1 class="head__tittle">Pricing Plan</h1>
+                        <h3 class="sub__tittle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua</h3>
+                    </div>
+                    <div class="card__pricingPlans ">
+                        <div class="card__pricingPlan free">
+                            <div class="plan__tittle">FREE</div>
+                            <div class="plan__price">$ 0</div>
+                            <div class="plan__time">per month</div>
+                            <div class="plan__description">
+                                <ul class="plan__descriptions">
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="learn__more">Learn More</button>
+                        </div>
+                        <div class="card__pricingPlan premium">
+                            <div class="plan__tittle">PREMIUM</div>
+                            <div class="plan__price">$ 175</div>
+                            <div class="plan__time">per month</div>
+                            <div class="plan__description">
+                                <ul class="plan__descriptions">
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="learn__more">Learn More</button>
+                        </div>
+                        <div class="card__pricingPlan platinum">
+                            <div class="plan__tittle">PLATINUM</div>
+                            <div class="plan__price">$ 500</div>
+                            <div class="plan__time">per month</div>
+                            <div class="plan__description">
+                                <ul class="plan__descriptions">
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                    <li class="plan__descriptions__item"><i class="fa-solid fa-circle-check"></i>
+                                        <span>Lorem ipsum dolor sit ame</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="learn__more">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWSLETTERSIGNUP -->
+        <div id="newsLetter" class="cover">
+            <div class="container">
+                <div class="newsLetter">
+                    <h3 class="tittle">Don’t miss our weekly updates about freelancer career</h3>
+                    <div class="mail">
+                        <input type="text" placeholder="Enter your email address...">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer" class="cover">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__top">
+                        <div class="company__infor">
+                            <div class="logo--white">
+                                <img src="./img/logo-white.png" alt="" srcset="">
+                            </div>
+                            <div class="about">Ziro is a Freelance Landing Website lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud</div>
+                            <div class="contact">
+                                <ul class="contacts">
+                                    <li class="contact__item"><i class="fa-brands fa-facebook-f"></i></li>
+                                    <li class="contact__item"><i class="fa-brands fa-twitter"></i></li>
+                                    <li class="contact__item"><i class="fa-brands fa-youtube"></i></li>
+                                    <li class="contact__item"><i class="fa-brands fa-instagram"></i></li>
+                                    <li class="contact__item"><i class="fa-brands fa-linkedin"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__link">
+                            <table class="footer__links" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <th>Ziro</th>
+                                    <th>Resources</th>
+                                    <th>Company</th>
+                                </tr>
+                                <tr>
+                                    <td>Why Ziro</td>
+                                    <td>Download</td>
+                                    <td>About us</td>
+                                </tr>
+                                <tr>
+                                    <td>Enterprise</td>
+                                    <td>Help Center</td>
+                                    <td>Contact us</td>
+                                </tr>
+                                <tr>
+                                    <td>Customer Story</td>
+                                    <td>Events</td>
+                                    <td>Products</td>
+                                </tr>
+                                <tr>
+                                    <td>Security</td>
+                                    <td>Guides</td>
+                                    <td>Login</td>
+                                </tr>
+                                <tr>
+                                    <td>Pricing</td>
+                                    <td>Partner</td>
+                                    <td>Sign Up</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Directories</td>
+                                    <td>FAQ</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="footer__contact">
+                            <div class="footer__contact__tittle">Get in Touch with Us</div>
+                            <ul class="contact__infor">
+                                <li class="contact__infor__item"><i class="fa-solid fa-location-dot"></i><span>832
+                                        Thompson Drive, San Fransisco
+                                        CA 94107, United States</span></li>
+                                <li class="contact__infor__item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>+123 345123 556</span>
+                                </li>
+                                <li class="contact__infor__item">
+                                    <i class="fa-regular fa-envelope"></i>
+                                    <span>support@ziro.id</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="footer__bottom">
+                        <div class="copywrite">Ziro Freelancer Landing Website - © 2020 All Rights Reserved</div>
+                        <div class="paymentsupport">Made with ♥ by Peterdraw</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./Js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+#footer {
+    background: var(--gray-900);
+
+}
+
+.footer {
+    color: var(--white);
+}
+
+.footer__top {
+    padding: 15.3rem 15.2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'infor link contact';
+    gap: 4rem;
+}
+
+.company__infor {
+    padding-top: 1.2rem;
+    grid-area: infor;
+}
+
+.company__infor .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5.2rem;
+    width: 14.4rem;
+    height: 5.663rem;
+}
+
+.company__infor .logo img {
+    margin-right: 1.6rem;
+    width: 100%;
+    height: 100%;
+}
+
+.company__infor .about {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 5.1rem;
+    width: 42.7rem;
+}
+
+.company__infor .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contacts .contact__item i {
+    font-size: 2rem;
+    padding: 2rem;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.contacts .contact__item:hover i {
+    background: var(--blue-500);
+    cursor: pointer;
+}
+
+table,
+td,
+th {
+    text-align: left;
+}
+
+th {
+    padding: 2.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 1.2rem;
+}
+
+td {
+    padding: 1.2rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.footer__contact .footer__contact__tittle {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2.4rem;
+}
+
+.contact__infor li {
+    display: flex;
+}
+
+.footer__contact {
+    padding: 1.2rem;
+    width: 32.5rem;
+}
+
+.contact__infor__item {
+    margin-bottom: 4rem;
+}
+
+.contact__infor__item span {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.contact__infor__item i {
+    font-size: 1.8rem;
+    margin-right: 1.8rem;
+}
+
+.hr {
+    width: 100%;
+    height: .1rem;
+    background: #3D3F4E;
+    border: none;
+    outline: none;
+}
+
+.footer__bottom {
+    padding: 2.6rem 15.1rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    flex-wrap: wrap;
+}
+
+.footer__link {
+    grid-area: link;
+}
+
+.footer__contact {
+    grid-area: contact;
+}
+
+.logo--white {
+    width: 14.4rem;
+    height: 5.663rem;
+    margin-bottom: 5.237rem;
+}
+
+/* RESPONSIVE */
+
+/* .contact__infor .logo{
+    display: block;
+} */
+
+@media (max-width:1545px) {
+    .footer__top {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'infor infor' 'link contact';
+    }
+
+    .company__infor .about {
+        width: 100%;
+    }
+}
+
+@media (max-width:980px) {
+    .footer__top {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 'infor' 'link' 'contact';
+        padding: 0;
+    }
+
+    .company__infor .about {
+        width: 100%;
+    }
+
+    .footer__bottom{
+        padding: 0;
+    }
+}
