@@ -17,6 +17,9 @@
 
 /* RESPONSIVE */
 @media (max-width:1388px) {
+    .brandLogo{
+        height: 100%;
+    }
     .brandLogo img{
         /* grid-template-columns: repeat(3, 17.2rem); */
         width: 15rem;

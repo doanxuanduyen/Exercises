@@ -251,6 +251,9 @@
 }
 
 @media (max-width:786px) {
+    .banner{
+        padding: 0;
+    }
     .cardProfile {
         right: 18.7rem;
     }

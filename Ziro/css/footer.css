@@ -168,9 +168,14 @@ td {
     .footer__top {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 'infor' 'link' 'contact';
+        padding: 0;
     }
 
     .company__infor .about {
         width: 100%;
+    }
+
+    .footer__bottom{
+        padding: 0;
     }
 }
