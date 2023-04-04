@@ -1,0 +1,41 @@
+1. Viết chương trình JS để đảo ngược chuỗi ‘madsion’ thành “noisdam”.  Không được sử dụng hàm các hàm có sẵn của bộ string method
+
+2. Viết một hàm JavaScript để chuyển đổi một chuỗi thành camelCase.
+Test data:
+console.log(camelize("JavaScript Exercises"));
+console.log(camelize("JavaScript exercises"));
+console.log(camelize("JavaScriptExercises"));
+"JavaScriptExercises";
+"JavaScriptExercises";
+"JavaScriptExercises";
+
+3. Viết một hàm JavaScript để cắt bớt một chuỗi nếu nó dài hơn số lượng ký tự được chỉ định. Các chuỗi bị cắt ngắn sẽ kết thúc bằng một chuỗi dấu chấm lửng có thể dịch được ("…") (theo mặc định) hoặc các ký tự được chỉ định.
+Test data:
+console.log(text_truncate('We are doing JS string exercises.'))
+console.log(text_truncate('We are doing JS string exercises.',19))
+console.log(text_truncate('We are doing JS string exercises.',15,'!!'))
+"We are doing JS string exercises."
+"We are doing JS ..."
+"We are doing !!"
+
+4. Viết một hàm JavaScript nhận một chuỗi và xác định xem nó có thể được sắp xếp lại để trở thành một bảng màu hay không.
+Test Data :
+("maam") -> true
+("civic") -> true
+("IO") -> false
+(12321) -> "It must be a string."
+
+5. Viết chương trình JS để lấy ngày hiện tại hiển thị lần lượt theo các format sau
+mm-dd-yyyy,
+mm/dd/yyyy,
+dd-mm-yyyy,
+dd/mm/yyyy
+
+6. Viết chương trình JavaScript để tính số ngày còn lại cho đến tết âm
+
+7. Viết chương trình JS để kiểm tra xem một ma trận có phải là ma trận chéo hay không. Trong đại số tuyến tính, ma trận đường chéo là ma trận trong đó các phần tử bên ngoài đường chéo chính đều bằng 0 (đường chéo từ phía trên bên trái sang phía dưới bên phải)
+
+
+Test Data :
+([1, 0, 0], [0, 2, 0], [0, 0, 3] ) = true
+([1, 0, 0], [0, 2, 3], [0, 0, 3] ) = false
