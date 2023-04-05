@@ -46,30 +46,34 @@
 
 {
     function isColorBoard(str) {
-        let count = 0;
-        strLength = Math.floor(str.length / 2);
-
         if (typeof str !== 'string') {
             return 'It must be a string.'
         }
 
-        else {
-            for (let i = 0; i < strLength; i++) {
-                for (j = str.length - 1; j >= strLength; j--) {
-                    if (str[i] === str[j]) {
-                        count += 1;
-                    }
-                }
-            }
-            if (count == strLength) {
-                return true;
-            }
-            else {
+        for(let i = 0; i < str.length/2; i++){
+            if(str[i] != str[str.length-1-i]){
                 return false;
             }
         }
-    }
+        return true;
 
+        // let count = 0;
+        // strLength = Math.floor(str.length / 2);
+        //     for (let i = 0; i < strLength; i++) {
+        //         for (j = str.length - 1; j >= strLength; j--) {
+        //             if (str[i] === str[j]) {
+        //                 count += 1;
+        //             }
+        //         }
+        //     }
+        //     if (count == strLength) {
+        //         return true;
+        //     }
+        //     else {
+        //         return false;
+        //     }
+    }
+    
     console.log(isColorBoard('maam'));
     console.log(isColorBoard('civic'));
     console.log(isColorBoard('IO'));
